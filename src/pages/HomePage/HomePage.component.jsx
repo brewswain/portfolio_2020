@@ -2,15 +2,20 @@ import React from "react";
 
 import "./HomePage.style.scss";
 
-import { NavBar } from "../../partials";
-import { PrimaryText, TechStackText } from "../../components";
+import {
+  AboutSection,
+  ContactSection,
+  LandingPageSection,
+  ProjectSection,
+} from "../../sections";
 
 const HomePage = () => {
   return (
     <div className="home__page">
-      <NavBar />
-      <PrimaryText />
-      <TechStackText />
+      <LandingPageSection />
+      <AboutSection />
+      <ProjectSection />
+      <ContactSection />
     </div>
   );
 };

@@ -7,7 +7,6 @@ import { Logo } from "../../assets";
 
 const NavBar = () => (
   <div className="navbar__container">
-    {/* // insert icon here */}
     <div className="navbar__wrapper">
       <Logo className="navbar__logo" />
       <div className="navbar__links">
