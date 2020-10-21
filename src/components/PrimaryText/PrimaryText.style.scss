@@ -1,0 +1,30 @@
+.primary {
+  &__text {
+    font-family: "Lexend Deca", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 9rem;
+
+    // Temporary layout; please update this later
+    // margin: 8rem 0 0 15rem;
+    margin: 6rem auto 4rem;
+  }
+}
+
+.first {
+  &__name {
+    color: var(--text-primary-color);
+    text-align: center;
+    padding-right: 6ch;
+  }
+}
+
+.last {
+  &__name {
+    color: var(--text-primary-highlight);
+    text-align: center;
+    position: relative;
+    bottom: 3rem;
+  }
+}

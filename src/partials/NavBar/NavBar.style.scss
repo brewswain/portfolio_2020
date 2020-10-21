@@ -1,0 +1,28 @@
+.navbar {
+  &__container {
+    display: flex;
+    align-items: center;
+    height: 100px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+    margin: 3rem 0 0 3rem;
+  }
+  &__link {
+    color: var(--text-header-text);
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 1rem;
+  }
+
+  &__logo {
+    padding-left: 2rem;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    margin-left: 3rem;
+  }
+}
