@@ -1,0 +1,99 @@
+.section {
+  &__projects {
+    height: 100%;
+  }
+
+  &__header {
+    font-size: 4rem;
+    color: var(--text-primary-color);
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 300;
+    margin: 10rem 0 8rem 5rem;
+  }
+}
+
+.projects {
+  &__grid {
+    width: 80vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-row-gap: 5rem;
+    margin: 0 auto;
+
+    justify-items: center;
+  }
+
+  &__upcoming {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.github {
+  &__icon {
+    height: 32px;
+    position: absolute;
+    right: 1rem;
+    top: 0.5rem;
+    cursor: pointer;
+  }
+}
+.project {
+  &__card {
+    color: var(--text-primary-color);
+    width: 500px;
+  }
+
+  &__header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 2.2rem;
+    font-family: "Lexend Deca", sans-serif;
+  }
+
+  &__image {
+    // create a box shadow.
+    box-shadow: inherit;
+  }
+
+  &__description {
+    width: 100%;
+    font-size: 1.3rem;
+    font-family: "Lexend Deca", sans-serif;
+    line-height: 1.5;
+    font-weight: 300;
+    font-family: Roboto, sans-serif;
+    color: var(--text-project-description);
+    margin: 0 auto;
+    padding-bottom: 1rem;
+  }
+  &__link {
+    font-size: 1.6rem;
+    color: rgb(18, 195, 207);
+    text-decoration: none;
+    text-decoration: underline;
+  }
+}
+
+.link {
+  &__container {
+    display: flex;
+    align-items: center;
+    width: 190px;
+    position: relative;
+  }
+
+  &__icon {
+    width: 30px;
+    position: absolute;
+    right: 1rem;
+    top: 0.3rem;
+  }
+}

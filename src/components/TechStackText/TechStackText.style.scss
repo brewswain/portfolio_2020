@@ -7,9 +7,26 @@
 
   &__text {
     font-size: 3rem;
+    display: flex;
+
     color: var(--text-primary-color);
-    &::first-letter {
-      color: var(--text-secondary-highlight);
+  }
+
+  &__firstLetter {
+    color: var(--text-secondary-highlight);
+  }
+
+  &__word {
+    opacity: 0;
+    animation-name: opacityFade;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    transition: opacity 3s, transform 1s;
+    transition-delay: 0.5s;
+    transform: translateX(50px);
+    &--visible {
+      opacity: 1;
+      transform: translateX(0);
     }
   }
 }

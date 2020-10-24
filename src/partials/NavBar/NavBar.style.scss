@@ -11,12 +11,14 @@
     width: 35%;
     margin: 3rem 0 0 3rem;
   }
+
   &__link {
     color: var(--text-header-text);
     text-decoration: none;
     font-size: 2rem;
     padding: 1rem;
     transition: color 0.3s;
+    cursor: pointer;
 
     &:hover {
       color: var(--text-header-text-highlight);
@@ -24,10 +26,33 @@
   }
 
   &__logo {
-    padding-left: 2rem;
     width: 45px;
     height: 45px;
     cursor: pointer;
     margin-left: 3rem;
+
+    &:hover {
+      .logo {
+        &__background {
+          fill: rgb(165, 165, 165);
+        }
+      }
+    }
+  }
+}
+
+.logo {
+  &__background {
+    transition: 0.4s all;
+  }
+}
+
+.menu {
+  &__logo {
+    width: 30px;
+    cursor: pointer;
+    color: white;
+    position: fixed;
+    right: 10vw;
   }
 }

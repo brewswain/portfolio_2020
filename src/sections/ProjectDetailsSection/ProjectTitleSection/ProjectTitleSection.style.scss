@@ -1,0 +1,55 @@
+.project {
+  &__introduction {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    color: var(--text-primary-color);
+  }
+
+  &__section {
+    &__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+
+  &__title {
+    &__container {
+      width: 30vw;
+    }
+    &__header {
+      font-family: "Lexend Deca", sans-serif;
+      font-size: 3.25rem;
+      text-align: center;
+      margin-bottom: 8rem;
+    }
+
+    &__subtitle {
+      font-family: Lato, sans-serif;
+      color: var(--text-subtitle-color);
+      font-size: 1.5rem;
+      text-align: left;
+      width: 500px;
+    }
+
+    &__subheader {
+      font-size: 2.625rem;
+    }
+
+    &__screenshot {
+      width: 650px;
+    }
+  }
+
+  &__stack {
+    &__container {
+      height: 15rem;
+    }
+
+    &__items {
+      list-style-type: none;
+      line-height: 1.5;
+    }
+  }
+}

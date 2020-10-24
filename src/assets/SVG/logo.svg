@@ -1,6 +1,6 @@
 <svg width="320" height="320" viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect width="320" height="320" fill="white"/>
-<rect width="320" height="320" fill="#6563B6"/>
+<rect width="320" height="320" fill="#6563B6" className="logo__background"/>
 <rect x="48" y="111" width="45" height="162" fill="black"/>
 <rect x="115" y="52" width="45" height="162" fill="black"/>
 <rect x="116" y="273" width="45" height="113" transform="rotate(-90 116 273)" fill="black"/>

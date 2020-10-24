@@ -7,7 +7,7 @@ import {
   ContactSection,
   LandingPageSection,
   ProjectSection,
-} from "../../sections";
+} from "../../sections/";
 
 const HomePage = () => {
   return (

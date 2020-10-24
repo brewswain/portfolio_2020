@@ -9,5 +9,33 @@ body {
   --text-primary-highlight: hsl(212, 73%, 46%);
   --text-secondary-highlight: hsl(277, 100%, 61%);
   --text-subtitle-color: hsl(0, 0%, 59%);
+  --text-project-description: hsl(0, 0%, 79%);
   --text-contact-color: hsl(158, 77%, 44%);
+
+  // SideBar Colours
+  .hover {
+    &__purple {
+      --sidebar-icon-color: hsl(277, 88%, 55%);
+    }
+
+    &__blue {
+      --sidebar-icon-color: hsl(216, 96%, 50%);
+    }
+
+    &__green {
+      --sidebar-icon-color: hsl(119, 72%, 40%);
+    }
+
+    &__yellow {
+      --sidebar-icon-color: hsl(40, 98%, 47%);
+    }
+
+    &__orange {
+      --sidebar-icon-color: hsl(18, 99%, 50%);
+    }
+
+    &__red {
+      --sidebar-icon-color: hsl(0, 84%, 55%);
+    }
+  }
 }

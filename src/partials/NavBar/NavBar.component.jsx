@@ -1,27 +1,44 @@
-import React from "react";
+import React, { useContext } from "react";
 
 import "./NavBar.style.scss";
 
+import { Link as ScrollLink } from "react-scroll";
 import { Link } from "react-router-dom";
-import { Logo } from "../../assets";
 
-const NavBar = () => (
-  <div className="navbar__container">
-    <div className="navbar__wrapper">
-      <Logo className="navbar__logo" />
-      <div className="navbar__links">
-        <Link className="navbar__link" to="#projects">
-          Projects
+import { Logo, Menu } from "../../assets";
+import { NavBarContext, SideBarContext } from "../../contexts";
+
+const NavBar = () => {
+  const { isHomePage } = useContext(NavBarContext);
+  const sideBarContext = useContext(SideBarContext);
+  return (
+    <div className="navbar__container">
+      <div className="navbar__wrapper">
+        <Link to="/">
+          <Logo className="navbar__logo" />
         </Link>
-        <Link className="navbar__link" to="#about">
-          About
-        </Link>
-        <Link className="navbar__link" to="#contact">
-          Contact
-        </Link>
+        {isHomePage ? (
+          <div className="navbar__links">
+            <ScrollLink className="navbar__link" to="projects" smooth>
+              Projects
+            </ScrollLink>
+            <ScrollLink className="navbar__link" to="contact" smooth>
+              Contact
+            </ScrollLink>
+          </div>
+        ) : (
+          <div className="navbar__menu">
+            <Menu
+              className="menu__logo"
+              onClick={() => {
+                sideBarContext.setIsVisible(!sideBarContext.isVisible);
+              }}
+            />
+          </div>
+        )}
       </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default NavBar;

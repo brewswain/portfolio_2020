@@ -1,6 +1,23 @@
-import AboutSection from './AboutSection/AboutSection.component'
-import ContactSection from './ContactSection/ContactSection.component'
-import LandingPageSection from './LandingPageSection/LandingPageSection.component'
-import ProjectSection from './ProjectSection/ProjectSection.component'
+import AboutSection from "./HomePageSection/AboutSection/AboutSection.component";
+import ContactSection from "./HomePageSection/ContactSection/ContactSection.component";
+import JustificationSection from "./ProjectDetailsSection/JustificationSection/JustificationSection.component";
+import LandingPageSection from "./HomePageSection/LandingPageSection/LandingPageSection.component";
+import LessonsSection from "./ProjectDetailsSection/LessonsSection/LessonsSection.component";
+import OtherProjectsSection from "./ProjectDetailsSection/OtherProjectsSection/OtherProjectsSection.component";
+import ProblemsSection from "./ProjectDetailsSection/ProblemsSection/ProblemsSection.component";
+import ProjectSection from "./HomePageSection/ProjectSection/ProjectSection.component";
+import ProjectTitleSection from "./ProjectDetailsSection/ProjectTitleSection/ProjectTitleSection.component";
+import StackSection from "./ProjectDetailsSection/StackSection/StackSection.component";
 
-export {AboutSection, ContactSection, LandingPageSection, ProjectSection}
+export {
+  AboutSection,
+  ContactSection,
+  JustificationSection,
+  LandingPageSection,
+  LessonsSection,
+  OtherProjectsSection,
+  ProblemsSection,
+  ProjectSection,
+  ProjectTitleSection,
+  StackSection,
+};

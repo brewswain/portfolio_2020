@@ -1,0 +1,36 @@
+.stack {
+  &__container {
+    width: 80vw;
+    position: relative;
+  }
+
+  &__header {
+    font-size: 2.625rem;
+    font-family: "Lexend Deca", sans-serif;
+    color: var(--text-primary-color);
+    margin-left: 5rem;
+  }
+
+  &__subtitle {
+    width: 450px;
+    font-size: 1.375rem;
+    font-family: Lato, sans-serif;
+    line-height: 1.3;
+    color: var(--text-subtitle-color);
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &--1 {
+      padding: 5rem 0 2rem 0;
+    }
+
+    &--2 {
+      margin-left: 60%;
+      padding-bottom: 2rem;
+    }
+  }
+}
