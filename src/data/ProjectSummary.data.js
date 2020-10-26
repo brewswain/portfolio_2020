@@ -1,6 +1,6 @@
 const ProjectSummary = [
   {
-    id: 1,
+    id: "queeery",
     title: "Queeery",
     imageUrl: "https://placekitten.com/g/500/350",
     githubUrl: null,
@@ -8,7 +8,7 @@ const ProjectSummary = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore maiores numquam odit fugit mollitia iste aliquid sunt. Quasi alias, blanditiis praesentium optio eius maxime asperiores, quas harum ipsam fuga repellat.",
   },
   {
-    id: 2,
+    id: "the-collab-lab",
     title: "The Collab Lab",
     imageUrl: "https://placekitten.com/g/500/350",
     githubUrl: "https://github.com/the-collab-lab/tcl-11-smart-shopping-list",
@@ -16,7 +16,7 @@ const ProjectSummary = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore maiores numquam odit fugit mollitia iste aliquid sunt. Quasi alias, blanditiis praesentium optio eius maxime asperiores, quas harum ipsam fuga repellat.",
   },
   {
-    id: 3,
+    id: "blee_IO",
     title: "Blee's Box",
     imageUrl: "https://placekitten.com/g/500/350",
     githubUrl: "https://github.com/brewswain/blee_IO",
@@ -24,7 +24,7 @@ const ProjectSummary = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore maiores numquam odit fugit mollitia iste aliquid sunt. Quasi alias, blanditiis praesentium optio eius maxime asperiores, quas harum ipsam fuga repellat.",
   },
   {
-    id: 4,
+    id: "blee-commerce",
     title: "BleeCommerce",
     imageUrl: "https://placekitten.com/g/500/350",
     githubUrl: "https://github.com/brewswain/blee-commerce",

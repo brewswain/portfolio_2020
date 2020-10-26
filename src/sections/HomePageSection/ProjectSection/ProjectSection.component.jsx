@@ -1,15 +1,18 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 
 import "./ProjectSection.style.scss";
 import GitHubLogo from "../../../assets/PNG/github_Light.png";
 
+import { ProjectContext } from "../../../contexts";
+
 import ProjectSummary from "../../../data/ProjectSummary.data";
 
 import { Link } from "react-router-dom";
+
 import { TerminalIcon } from "../../../assets";
 
 const ProjectSection = () => {
-  const [currentProject, setCurrentProject] = useState(null);
+  const { setSelectedProject } = useContext(ProjectContext);
 
   return (
     <section className="section__projects" id="projects">
@@ -42,7 +45,8 @@ const ProjectSection = () => {
                   to="/projects"
                   className="project__link"
                   onClick={() => {
-                    setCurrentProject(project.title);
+                    setSelectedProject(project.id);
+                    window.localStorage.setItem("storedProject", project.id);
                   }}
                 >
                   View Details

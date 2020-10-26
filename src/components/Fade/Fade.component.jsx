@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const Slide = ({ children, visible }) => {
+const Fade = ({ children, visible }) => {
   const [render, setRender] = useState(visible);
 
   useEffect(() => {
@@ -17,7 +17,7 @@ const Slide = ({ children, visible }) => {
   return (
     render && (
       <div
-        style={{ animation: `${visible ? "slideIn" : "slideOut"} 1s` }}
+        style={{ animation: `${visible ? "fadeIn" : "fadeOut"} .3s` }}
         onAnimationEnd={handleComponentMount}
       >
         {children}
@@ -26,4 +26,4 @@ const Slide = ({ children, visible }) => {
   );
 };
 
-export default Slide;
+export default Fade;

@@ -1,21 +1,39 @@
-import React, { useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 
 import "./OtherProjectsSection.style.scss";
 
 import { Link } from "react-router-dom";
 
+import { ProjectContext, SelectedProjectContext } from "../../../contexts";
+
 import ProjectSummary from "../../../data/ProjectSummary.data";
 
 const OtherProjectsSection = () => {
-  const [currentProject, setCurrentProject] = useState(null);
+  const { selectedProject, setSelectedProject } = useContext(ProjectContext);
+  const { projectState } = useContext(SelectedProjectContext);
+
+  let availableProjects = ProjectSummary.filter(
+    (project) => project.id !== projectState
+  );
+
+  useEffect(() => {
+    const storedProject = window.localStorage.getItem("storedProject");
+    console.log(storedProject);
+
+    if (!storedProject) {
+      window.localStorage.setItem("storedProject", selectedProject);
+    }
+  }, []);
+
+  useEffect(() => {
+    console.log(selectedProject);
+  }, [selectedProject]);
 
   return (
     <section className="projects__feed" id="projects">
-      {/* TODO: Make a filter to ensure that only projects that aren't selected
-                show up here (Probably using currentProject or some form of state
-                to accomplish that)
-            */}
-      {ProjectSummary.map((project) => (
+      {/* TODO: Edit filter to ensure that it works on page refresh. Probably do something using cache
+       */}
+      {availableProjects.map((project) => (
         <div className="project__card" key={project.id}>
           <div className="project__header">
             <div className="project__title">{project.title}</div>
@@ -27,7 +45,9 @@ const OtherProjectsSection = () => {
               to="/projects"
               className="project__link"
               onClick={() => {
-                setCurrentProject(project.title);
+                setSelectedProject(project.title);
+                window.localStorage.setItem("storedProject", project.id);
+                window.location.reload();
               }}
             >
               View Details
