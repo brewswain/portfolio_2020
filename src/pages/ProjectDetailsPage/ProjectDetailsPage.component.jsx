@@ -36,7 +36,7 @@ const ProjectDetailsPage = () => {
   }, []);
 
   useEffect(() => {
-    setIsHomePage(true);
+    setIsHomePage(false);
   }, [setIsHomePage]);
 
   useEffect(() => {

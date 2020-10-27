@@ -52,7 +52,7 @@ const ProjectDetails = [
     lessons: ``,
   },
   {
-    title: "the-collab-lab",
+    title: "Smart Shopping List with The Collab Lab!",
     id: "the-collab-lab",
     overview: ``,
     stack: ["React", "Firebase"],
