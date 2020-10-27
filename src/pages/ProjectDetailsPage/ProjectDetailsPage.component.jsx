@@ -37,6 +37,9 @@ const ProjectDetailsPage = () => {
   );
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  useEffect(() => {
     setProjectState(selectedProject);
   }, [projectState, selectedProject, setProjectState]);
   return (
