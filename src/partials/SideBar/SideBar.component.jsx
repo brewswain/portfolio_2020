@@ -20,13 +20,13 @@ const SideBar = () => {
   const { isVisible, setIsVisible } = useContext(SideBarContext);
 
   return (
-    <div
-      className="sidebar__page__modal"
-      onClick={() => {
-        setIsVisible(false);
-      }}
-    >
-      <Fade visible={isVisible}>
+    <Fade visible={isVisible}>
+      <div
+        className="sidebar__page__modal"
+        onClick={() => {
+          setIsVisible(false);
+        }}
+      >
         <div className="sidebar__container">
           <div className="sidebar__element">
             <Link to="/" style={{ textDecoration: "none" }}>
@@ -95,8 +95,8 @@ const SideBar = () => {
             </ScrollLink>
           </div>
         </div>
-      </Fade>
-    </div>
+      </div>
+    </Fade>
   );
 };
 

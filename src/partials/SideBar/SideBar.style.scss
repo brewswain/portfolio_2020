@@ -1,11 +1,11 @@
 .sidebar {
   &__page {
-    &__modal {
-      width: 100vw;
-      height: 100vh;
-      position: fixed;
-      z-index: 4;
-    }
+    // &__modal {
+    //   width: 100vw;
+    //   height: 100vh;
+    //   background: hsla(0, 0%, 32%, 0.6);
+    //   position: fixed;
+    // }
   }
   &__container {
     width: 260px;
