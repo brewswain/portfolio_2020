@@ -7,7 +7,7 @@ import { NavBar, SideBar } from "../../partials";
 import ProjectDetails from "../../data/ProjectDetails.data";
 
 import {
-  NavBarContext,
+  // NavBarContext,
   ProjectContext,
   SelectedProjectContext,
 } from "../../contexts";
