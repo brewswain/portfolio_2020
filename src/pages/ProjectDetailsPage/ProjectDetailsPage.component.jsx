@@ -23,7 +23,7 @@ import {
 } from "../../sections";
 
 const ProjectDetailsPage = () => {
-  const { setIsHomePage } = useContext(NavBarContext);
+  // const { setIsHomePage } = useContext(NavBarContext);
   const { selectedProject } = useContext(ProjectContext);
   const { projectState, setProjectState } = useContext(SelectedProjectContext);
 
