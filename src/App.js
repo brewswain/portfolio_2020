@@ -18,8 +18,6 @@ const App = () => {
 
   const storedProject = window.localStorage.getItem("storedProject");
 
-  useEffect(() => {}, []);
-
   useEffect(() => {
     console.log(projectState);
     if (storedProject) {
@@ -27,7 +25,7 @@ const App = () => {
     } else {
       setProjectState(selectedProject);
     }
-  }, [projectState]);
+  }, [projectState, storedProject, selectedProject]);
   return (
     <div className="App">
       <NavBarContext.Provider value={{ isHomePage, setIsHomePage }}>

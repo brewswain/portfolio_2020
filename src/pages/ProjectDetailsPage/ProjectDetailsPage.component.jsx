@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect } from "react";
 
 import "./ProjectDetailsPage.style.scss";
 
@@ -37,13 +37,8 @@ const ProjectDetailsPage = () => {
   );
 
   useEffect(() => {
-    setIsHomePage(false);
-    console.log("projectState in ProjectDetails =", projectState);
-  }, []);
-
-  useEffect(() => {
     setProjectState(selectedProject);
-  }, [projectState]);
+  }, [projectState, selectedProject, setProjectState]);
   return (
     <div className="details__page">
       <NavBar />
