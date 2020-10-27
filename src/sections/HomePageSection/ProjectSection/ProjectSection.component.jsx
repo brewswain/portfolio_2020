@@ -3,7 +3,7 @@ import React, { useContext } from "react";
 import "./ProjectSection.style.scss";
 import GitHubLogo from "../../../assets/PNG/github_Light.png";
 
-import { ProjectContext } from "../../../contexts";
+import { NavBarContext, ProjectContext } from "../../../contexts";
 
 import ProjectSummary from "../../../data/ProjectSummary.data";
 
@@ -13,6 +13,7 @@ import { TerminalIcon } from "../../../assets";
 
 const ProjectSection = () => {
   const { setSelectedProject } = useContext(ProjectContext);
+  const { setIsHomePage } = useContext(NavBarContext);
 
   return (
     <section className="section__projects" id="projects">
@@ -46,6 +47,7 @@ const ProjectSection = () => {
                   className="project__link"
                   onClick={() => {
                     setSelectedProject(project.id);
+                    setIsHomePage(false);
                     window.localStorage.setItem("storedProject", project.id);
                   }}
                 >

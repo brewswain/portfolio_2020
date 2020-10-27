@@ -7,7 +7,7 @@ import { NavBar, SideBar } from "../../partials";
 import ProjectDetails from "../../data/ProjectDetails.data";
 
 import {
-  // NavBarContext,
+  NavBarContext,
   ProjectContext,
   SelectedProjectContext,
 } from "../../contexts";
@@ -23,14 +23,9 @@ import {
 } from "../../sections";
 
 const ProjectDetailsPage = () => {
-  // const { setIsHomePage } = useContext(NavBarContext);
+  const { setIsHomePage } = useContext(NavBarContext);
   const { selectedProject } = useContext(ProjectContext);
   const { projectState, setProjectState } = useContext(SelectedProjectContext);
-
-  // StopGap for now, will replace the 'blee_IO' with state later down the line
-  // let filteredProject = ProjectDetails.filter(
-  //   (project) =>!storedProject ? {project.id === selectedProject} : {}
-  // );
 
   let filteredProject = ProjectDetails.filter(
     (project) => project.id === projectState
@@ -39,6 +34,11 @@ const ProjectDetailsPage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  useEffect(() => {
+    setIsHomePage(true);
+  }, [setIsHomePage]);
+
   useEffect(() => {
     setProjectState(selectedProject);
   }, [projectState, selectedProject, setProjectState]);

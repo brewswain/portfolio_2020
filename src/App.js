@@ -11,7 +11,7 @@ import {
 } from "./contexts";
 
 const App = () => {
-  const [isHomePage, setIsHomePage] = useState(null);
+  const [isHomePage, setIsHomePage] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
   const [selectedProject, setSelectedProject] = useState("queeery");
   const [projectState, setProjectState] = useState(null);
@@ -19,7 +19,6 @@ const App = () => {
   const storedProject = window.localStorage.getItem("storedProject");
 
   useEffect(() => {
-    console.log(projectState);
     if (storedProject) {
       setProjectState(storedProject);
     } else {

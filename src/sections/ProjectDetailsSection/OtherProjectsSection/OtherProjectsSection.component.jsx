@@ -18,7 +18,6 @@ const OtherProjectsSection = () => {
 
   useEffect(() => {
     const storedProject = window.localStorage.getItem("storedProject");
-    console.log(storedProject);
 
     if (!storedProject) {
       window.localStorage.setItem("storedProject", selectedProject);
