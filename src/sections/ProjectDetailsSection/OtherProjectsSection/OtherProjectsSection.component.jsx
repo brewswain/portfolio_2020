@@ -23,10 +23,6 @@ const OtherProjectsSection = () => {
     if (!storedProject) {
       window.localStorage.setItem("storedProject", selectedProject);
     }
-  }, []);
-
-  useEffect(() => {
-    console.log(selectedProject);
   }, [selectedProject]);
 
   return (

@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 
 import "./ProjectSection.style.scss";
 import GitHubLogo from "../../../assets/PNG/github_Light.png";

@@ -11,7 +11,7 @@ const LandingPageSection = () => {
 
   useEffect(() => {
     setIsHomePage(true);
-  }, []);
+  }, [setIsHomePage]);
 
   return (
     <section className="section__home" id="home">
