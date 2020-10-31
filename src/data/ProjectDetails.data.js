@@ -6,7 +6,8 @@ import {
   QueeeryHero,
   QueeeryLarge,
   TclHero,
-  TclLarge,
+  TclLarge_1,
+  TclLarge_2,
 } from "../assets/IMG";
 
 const ProjectDetails = [
@@ -54,7 +55,7 @@ const ProjectDetails = [
     knowledge that this platform will put the community first, due to it not being built by a heteronormative core-group of engineers. I am incredibly proud to 
     have been a part of the Queeery team.`,
     stack: ["MongoDB", "Express", "React", "Node.JS", "Stripe"],
-    github: "",
+    github: null,
     demoUrl: "https://www.queeery.com",
     fullPageScreenshotUrl: QueeeryLarge,
     homePagePic: QueeeryHero,
@@ -93,13 +94,15 @@ const ProjectDetails = [
     estimations, and uses Google's Firestore backend to store shopping lists.`,
     stack: ["React", "Firebase", "Material-UI"],
     github: "https://github.com/the-collab-lab/tcl-11-smart-shopping-list",
-    demoUrl: "",
+    demoUrl: "https://amazing-noether-6c5afb.netlify.app/",
     homePagePic: TclHero,
     justification: `The brainchild of Andrew Hedges, The Collab Lab seeks to help Software Engineers get experience in working inside of a team environment. 
     I bring this up as it's a core aspect of this project, and in this case, I actually view the code itself as being secondary. 
     This project was made to emphasize collaboration with rotating team members, aid understanding of how to leverage Mentors(aka more senior staff) to help remove blocks, 
     learn to give good, informative, and concise project demos, and understand how to make effective Pull Requests.`,
-    fullPageScreenshotUrl: TclLarge,
+    fullPageScreenshotUrl: null,
+    heroPicUrl_1: TclLarge_1,
+    heroPicUrl_2: TclLarge_2,
     stackDetails_1: `As this was a team project, the stack was kept pretty simple to help minimize Technical debt. React and Firebase were used to handle our 
     frontend and backend respectively, with Firebase being an excellent choice for this style of project, since it offers a subscription flow to give our frontend real-time updates. `,
     stackDetails_2: `Material-UI being used was also following the same technical debt approach, in that multiple aspects of our UI were now sharing the same approach, 
