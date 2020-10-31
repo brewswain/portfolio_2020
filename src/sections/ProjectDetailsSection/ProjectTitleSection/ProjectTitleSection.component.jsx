@@ -6,7 +6,6 @@ const ProjectTitleSection = ({
   project,
   project: { title, overview, stack, fullPageScreenshotUrl },
 }) => {
-  const chosenProject = localStorage.getItem("storedProject");
   return (
     <section className="project__introduction" id="top">
       <div className="project__section__container">
