@@ -1,35 +1,41 @@
+import {
+  BleeBoxThumbnail,
+  BleeCommerceThumbnail,
+  QueeeryThumbnail,
+  TclThumbnail,
+} from "../assets/IMG";
+
 const ProjectSummary = [
   {
     id: "queeery",
     title: "Queeery",
-    imageUrl: "https://placekitten.com/g/500/350",
+    imageUrl: QueeeryThumbnail,
     githubUrl: null,
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore maiores numquam odit fugit mollitia iste aliquid sunt. Quasi alias, blanditiis praesentium optio eius maxime asperiores, quas harum ipsam fuga repellat.",
+      "An LGBTQ+ Event Management Platform, made using the MERN stack.",
   },
   {
     id: "the-collab-lab",
     title: "The Collab Lab",
-    imageUrl: "https://placekitten.com/g/500/350",
+    imageUrl: TclThumbnail,
     githubUrl: "https://github.com/the-collab-lab/tcl-11-smart-shopping-list",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore maiores numquam odit fugit mollitia iste aliquid sunt. Quasi alias, blanditiis praesentium optio eius maxime asperiores, quas harum ipsam fuga repellat.",
+      "A Self-sorting, smart shopping List built with a focus on collaboration.",
   },
   {
     id: "blee_IO",
     title: "Blee's Box",
-    imageUrl: "https://placekitten.com/g/500/350",
+    imageUrl: BleeBoxThumbnail,
     githubUrl: "https://github.com/brewswain/blee_IO",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore maiores numquam odit fugit mollitia iste aliquid sunt. Quasi alias, blanditiis praesentium optio eius maxime asperiores, quas harum ipsam fuga repellat.",
+      "My personal toolbox that contains my commonly used code snippets.",
   },
   {
     id: "blee-commerce",
     title: "BleeCommerce",
-    imageUrl: "https://placekitten.com/g/500/350",
+    imageUrl: BleeCommerceThumbnail,
     githubUrl: "https://github.com/brewswain/blee-commerce",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore maiores numquam odit fugit mollitia iste aliquid sunt. Quasi alias, blanditiis praesentium optio eius maxime asperiores, quas harum ipsam fuga repellat.",
+    description: "A functional custom eCommerce platform uses Stripe.",
   },
 ];
 

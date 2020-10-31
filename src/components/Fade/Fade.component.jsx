@@ -17,7 +17,7 @@ const Fade = ({ children, visible }) => {
   return (
     render && (
       <div
-        style={{ animation: `${visible ? "fadeIn" : "fadeOut"} .3s` }}
+        style={{ animation: `${visible ? "fadeIn" : "fadeOut"} .1s` }}
         onAnimationEnd={handleComponentMount}
       >
         {children}

@@ -49,12 +49,12 @@
     position: relative;
     display: flex;
     align-items: center;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.3rem;
   }
 
   &__title {
     text-align: center;
-    font-size: 2.2rem;
+    font-size: 2.4rem;
     font-family: "Lexend Deca", sans-serif;
   }
 
@@ -70,15 +70,15 @@
     line-height: 1.5;
     font-weight: 300;
     font-family: Roboto, sans-serif;
-    color: var(--text-project-description);
+    color: var(--text-subtitle-color);
     margin: 0 auto;
-    padding-bottom: 1rem;
+    padding: 1rem;
   }
   &__link {
     font-size: 1.6rem;
     color: rgb(18, 195, 207);
     text-decoration: none;
-    text-decoration: underline;
+    padding: 0 1rem;
   }
 }
 
@@ -93,7 +93,21 @@
   &__icon {
     width: 30px;
     position: absolute;
-    right: 1rem;
+    right: 0;
     top: 0.3rem;
+  }
+}
+
+.placeholder {
+  &__project {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+
+    .project {
+      &__description {
+        text-align: center;
+      }
+    }
   }
 }

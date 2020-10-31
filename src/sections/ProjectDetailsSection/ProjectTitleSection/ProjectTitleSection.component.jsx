@@ -4,8 +4,9 @@ import "./ProjectTitleSection.style.scss";
 
 const ProjectTitleSection = ({
   project,
-  project: { title, overview, stack },
+  project: { title, overview, stack, fullPageScreenshotUrl },
 }) => {
+  const chosenProject = localStorage.getItem("storedProject");
   return (
     <section className="project__introduction" id="top">
       <div className="project__section__container">
@@ -25,7 +26,7 @@ const ProjectTitleSection = ({
         </div>
       </div>
       <img
-        src="https://placekitten.com/g/1080/1920"
+        src={fullPageScreenshotUrl}
         alt="Fullpage screenshot"
         className="project__title__screenshot"
       />

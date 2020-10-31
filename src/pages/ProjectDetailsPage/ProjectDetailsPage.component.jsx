@@ -61,7 +61,7 @@ sideBarContext.setIsVisible(false);
             <img
               className="browser__screenshot
       "
-              src="https://placekitten.com/g/1920/1080"
+              src={filteredProject[0].homePagePic}
               alt="Single View pic"
             />
           </div>

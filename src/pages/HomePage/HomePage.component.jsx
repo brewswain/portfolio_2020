@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import "./HomePage.style.scss";
 
@@ -10,6 +10,10 @@ import {
 } from "../../sections/";
 
 const HomePage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="home__page">
       <LandingPageSection />

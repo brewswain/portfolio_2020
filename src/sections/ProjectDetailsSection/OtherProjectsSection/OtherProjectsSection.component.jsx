@@ -42,6 +42,7 @@ const OtherProjectsSection = () => {
               onClick={() => {
                 setSelectedProject(project.title);
                 window.localStorage.setItem("storedProject", project.id);
+                window.scrollTo(0, 0);
                 window.location.reload();
               }}
             >

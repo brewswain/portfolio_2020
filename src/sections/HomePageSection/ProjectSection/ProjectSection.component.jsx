@@ -6,6 +6,7 @@ import GitHubLogo from "../../../assets/PNG/github_Light.png";
 import { NavBarContext, ProjectContext } from "../../../contexts";
 
 import ProjectSummary from "../../../data/ProjectSummary.data";
+import ProjectUpcoming from "../../../data/ProjectUpcoming.data";
 
 import { Link } from "react-router-dom";
 
@@ -14,6 +15,7 @@ import { TerminalIcon } from "../../../assets";
 const ProjectSection = () => {
   const { setSelectedProject } = useContext(ProjectContext);
   const { setIsHomePage } = useContext(NavBarContext);
+  const { upcomingImageUrl, upcomingDescription } = ProjectUpcoming;
 
   return (
     <section className="section__projects" id="projects">
@@ -62,7 +64,15 @@ const ProjectSection = () => {
         {/* <UpcomingProject /> */}
         <h1 className="section__header">What I'm working on</h1>
         <div className="projects__upcoming">
-          <div className="placeholder__project"></div>
+          <div className="placeholder__project">
+            <img
+              className="browser__screenshot
+      "
+              src={upcomingImageUrl}
+              alt="Single View pic"
+            />
+            <div className="project__description">{upcomingDescription}</div>
+          </div>
         </div>
       </div>
     </section>
