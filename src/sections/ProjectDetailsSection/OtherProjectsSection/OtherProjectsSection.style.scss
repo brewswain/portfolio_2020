@@ -2,8 +2,12 @@
   &__feed {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
   }
-
-  &__card {
+  &__header {
+    font-size: 4rem;
+    font-family: "Lexend Deca", sans-serif;
+    color: var(--text-primary-color);
+    margin: 0 auto;
   }
 }

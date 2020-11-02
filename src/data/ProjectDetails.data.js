@@ -29,8 +29,8 @@ const ProjectDetails = [
     stackDetails_2: `Speaking of our backend, I elected to use firebase to store our information. 
       This was done since I wanted an easy to use storage solution.`,
     fullPageScreenshotUrl: BleeBoxLarge,
-    problems_1: `Funnily enough, Routing gave me a lot of trouble for this app. I’m hosting this project on GitHub-Pages and 
-    it apparently doesn’t like routing very much, at all.`,
+    problems_1: `Unexpectedly, Routing gave me a lot of trouble for this app. I’m hosting this project on GitHub-Pages and 
+    it apparently doesn’t like routing very much.`,
     problems_2: `
         My initial approach was that, when one of our SideBar elements was clicked, it would set a URL of ‘collection/element’,
      which our element’s page view would then reference to our firestore collection to grab our data from the backend. For instance, clicking ‘Card’ in the 
@@ -130,7 +130,7 @@ const ProjectDetails = [
     id: "blee-commerce",
     overview: `A fully functioning eCommerce platform, this application uses serverless functions from Google Firebase's end to make calls to stripe's API, 
     facilitating our purchase calls.`,
-    stack: ["React", "Firebase", "Redux", "Serverless Functions", "Stripe"],
+    stack: ["React", "Firebase", "Redux", "Stripe"],
     github: "https://github.com/brewswain/blee-commerce",
     demoUrl: "https://blee-commerce.web.app/",
     homePagePic: BleeCommerceHero,

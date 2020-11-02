@@ -1,0 +1,245 @@
+@media (max-width: 450px) {
+  body {
+    // ----------------------------------------------------- HomePage view ----------------------------------------------------- //
+
+    //Navbar Section
+    .navbar {
+      &__container {
+        height: 60px;
+      }
+
+      &__wrapper {
+        width: 80%;
+        margin: 0;
+        margin-top: 1rem;
+      }
+
+      &__link {
+        font-size: 1.6rem;
+      }
+
+      &__logo {
+        width: 35px;
+        height: 35px;
+      }
+    }
+
+    // Landing Page Section
+    .primary {
+      &__text {
+        font-family: "Lexend Deca", sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 5rem;
+        padding-left: 0;
+      }
+    }
+
+    .first {
+      &__name {
+        color: var(--text-primary-color);
+        text-align: center;
+        padding-right: 0;
+      }
+    }
+
+    .last {
+      &__name {
+        bottom: 1rem;
+      }
+    }
+
+    .techStack {
+      &__text {
+        font-size: 2.3rem;
+      }
+    }
+
+    // About Section
+    .section {
+      &__about {
+        margin: 0;
+      }
+    }
+    .about {
+      &__summary {
+        font-family: Lato, sans-serif;
+        color: var(--text-subtitle-color);
+        font-size: 1.5rem;
+        width: 80vw;
+        margin: 0 aut0;
+      }
+    }
+
+    // Projects Section
+    .section {
+      &__projects {
+        height: 100%;
+      }
+
+      &__header {
+        font-size: 4rem;
+        color: var(--text-primary-color);
+        font-family: "Lexend Deca", sans-serif;
+        font-weight: 300;
+        margin: 7rem auto;
+      }
+    }
+
+    .project {
+      &__card {
+        width: 80vw;
+      }
+
+      &__image {
+        width: 80vw;
+      }
+    }
+
+    .placeholder {
+      &__project {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+
+        .project {
+          &__description {
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    // Contact Section
+    .section {
+      &__contact {
+        height: 100%;
+      }
+    }
+
+    .contact {
+      &__subtitle {
+        color: var(--text-subtitle-color);
+        font-size: 1.3rem;
+        width: 350px;
+        font-family: "Lexend Deca", sans-serif;
+        margin-bottom: 2rem;
+      }
+
+      &__email {
+        color: var(--text-contact-color);
+        font-size: 1.75rem;
+
+        text-decoration: none;
+      }
+    }
+
+    // ----------------------------------------------------- ProjectDetails view ----------------------------------------------------- //
+    // Project Title Section
+
+    .project {
+      &__section {
+        &__container {
+          width: 80vw;
+        }
+      }
+
+      &__tile {
+        width: 35vw;
+        padding: 1rem;
+        display: flex;
+
+        &:nth-child(2) {
+          padding-left: 2rem;
+        }
+      }
+
+      &__title {
+        &__header {
+          font-size: 3.25rem;
+          padding: 0;
+          padding-top: 2rem;
+          margin-bottom: 4rem;
+        }
+
+        &__subtitle {
+          font-size: 1.3rem;
+          width: 85vw;
+          margin: 0 auto;
+        }
+        &__subheader {
+          width: 45vw;
+          font-size: 2.1rem;
+        }
+      }
+
+      &__stack {
+        &__container {
+          width: 99vw;
+          align-items: center;
+          display: flex;
+          padding-bottom: 9rem;
+        }
+
+        &__subtitle {
+          font-size: 1.3rem;
+        }
+      }
+    }
+
+    .stack {
+      display: none;
+    }
+
+    // Justification Section
+    .justification {
+      &__container {
+        height: unset;
+        padding-top: 0;
+      }
+
+      &__subtitle {
+        font-size: 1.3rem;
+      }
+    }
+
+    // Stack Section
+
+    .stack {
+      &__subtitle {
+        &--1,
+        &--2 {
+          font-size: 1.3rem;
+        }
+      }
+    }
+
+    .image {
+      &__container {
+        display: none;
+      }
+    }
+
+    //Problems Section/Lessons Section
+
+    .problems {
+      &__header {
+        padding-top: 5rem;
+      }
+    }
+    .problems,
+    .lessons {
+      &__subtitle {
+        font-size: 1.3rem;
+      }
+    }
+
+    .projects {
+      &__feed {
+        padding-top: 5rem;
+      }
+    }
+  }
+}

@@ -22,43 +22,49 @@ const ProjectTitleSection = ({
           <div className="project__title__subtitle">{overview}</div>
         </div>
         <div className="project__stack__container">
-          <div className="project__title__subheader">
-            Stack
+          <div className="project__tile stack">
+            <div className="project__title__subheader">Stack</div>
             <div className="project__stack__subtitle">
               <ul className="project__stack__items">
-                {stack.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
+                <div>
+                  {stack.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </div>
               </ul>
             </div>
           </div>
+
           {github && (
-            <div className="project__title__subheader">
-              Repository
-              <div className="project__stack__subtitle">
-                <a
-                  className="project__stack__link"
-                  href={github}
-                  target="_blank"
-                  rel="noreferrer noopener"
-                >
-                  View Code
-                </a>
+            <div className="project__tile">
+              <div className="project__title__subheader">
+                Repository
+                <div className="project__stack__subtitle">
+                  <a
+                    className="project__stack__link"
+                    href={github}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    View Code
+                  </a>
+                </div>
               </div>
             </div>
           )}
-
-          <div className="project__title__subheader">
-            Demo
-            <div className="project__stack__subtitle">
-              <a
-                className="project__stack__link"
-                href={demoUrl}
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                View site
-              </a>
+          <div className="project__tile">
+            <div className="project__title__subheader">
+              Demo
+              <div className="project__stack__subtitle">
+                <a
+                  className="project__stack__link"
+                  href={demoUrl}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  View site
+                </a>
+              </div>
             </div>
           </div>
         </div>

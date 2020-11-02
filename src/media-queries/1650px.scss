@@ -1,0 +1,28 @@
+@media (max-width: 1750px) {
+  body {
+    // ----------------------------------------------------- ProjectDetails view ----------------------------------------------------- //
+
+    // Project Stack details container including code repo and demo
+    .project {
+      &__stack {
+        &__container {
+          width: 500px;
+          display: grid;
+          padding-right: 3rem;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(2, 1fr);
+        }
+      }
+    }
+
+    // Other Projects feed
+    .projects {
+      &__feed {
+        display: flex;
+        justify-content: space-around;
+        width: 80vw;
+        margin: 0 auto;
+      }
+    }
+  }
+}

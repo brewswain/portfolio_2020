@@ -26,8 +26,6 @@ const OtherProjectsSection = () => {
 
   return (
     <section className="projects__feed" id="projects">
-      {/* TODO: Edit filter to ensure that it works on page refresh. Probably do something using cache
-       */}
       {availableProjects.map((project) => (
         <div className="project__card" key={project.id}>
           <div className="project__header">

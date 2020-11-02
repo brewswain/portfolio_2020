@@ -1,0 +1,258 @@
+@media (max-width: 1050px) {
+  body {
+    // ----------------------------------------------------- HomePage view ----------------------------------------------------- //
+
+    // "Brandon Lee" Text
+    .primary {
+      &__text {
+        font-family: "Lexend Deca", sans-serif;
+        font-size: 7rem;
+        padding-left: 2rem;
+      }
+    }
+
+    // About section margin
+    .section {
+      &__about {
+        margin: 5rem 0;
+      }
+
+      &__header {
+        font-size: 3rem;
+      }
+    }
+
+    // Project Section Grid layout
+
+    .projects {
+      &__grid {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+
+      &__upcoming {
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    .project {
+      &__card {
+        width: 400px;
+        padding-bottom: 3rem;
+      }
+
+      &__title {
+        font-size: 2rem;
+      }
+
+      &__image {
+        width: 400px;
+      }
+    }
+
+    .link {
+      &__container {
+        display: flex;
+        align-items: center;
+        width: 190px;
+        position: relative;
+      }
+
+      &__icon {
+        width: 30px;
+        position: absolute;
+        right: 0;
+        top: 0.3rem;
+      }
+    }
+
+    // ----------------------------------------------------- ProjectDetails view ----------------------------------------------------- //
+    .project {
+      &__introduction {
+        display: flex;
+        justify-content: center;
+      }
+
+      &__section {
+        &__container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: inherit;
+        }
+      }
+
+      &__title {
+        &__container {
+          width: inherit;
+        }
+        &__header {
+          font-size: 4.25rem;
+          width: inherit;
+          padding: 3rem;
+        }
+
+        &__subtitle {
+          font-size: 1.5rem;
+          width: unset;
+          max-width: 550px;
+          margin: 0 auto;
+        }
+        &__subheader {
+          font-size: 2.625rem;
+          padding-top: 9rem;
+          width: 32vw;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+        }
+
+        &__screenshot,
+        &__hero {
+          display: none;
+        }
+      }
+
+      &__stack {
+        &__container {
+          display: flex;
+          width: 50vw;
+          justify-content: center;
+          padding-right: 0;
+        }
+
+        &__items {
+          list-style-type: none;
+          line-height: 1.5;
+          width: 32vw;
+          font-size: 1.3rem;
+          padding-left: 0;
+
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+          margin-top: 0;
+        }
+
+        &__link {
+          text-decoration: none;
+          color: var(--text-primary-highlight);
+          transition: 0.3s all;
+          &:hover {
+            color: var(--text-secondary-highlight);
+          }
+        }
+
+        &__subtitle {
+          width: 32vw;
+          font-size: 1.5rem;
+          margin-top: 1rem;
+          padding-left: 0;
+          display: flex;
+          justify-content: center;
+        }
+      }
+      &__hero {
+        &__container {
+          display: none;
+        }
+      }
+    }
+
+    // justification section
+
+    .justification {
+      &__subtitle {
+        width: 80vw;
+      }
+    }
+
+    // Stack section
+
+    .stack {
+      &__container {
+        width: 90vw;
+        margin: 0 auto;
+      }
+      &__header {
+        margin-left: 0;
+        text-align: center;
+      }
+      &__subtitle {
+        width: 80vw;
+
+        &--2 {
+          margin-left: 0;
+          margin-top: 1rem;
+        }
+      }
+    }
+
+    // Problems Section
+    .problems {
+      &__header {
+        margin-right: 0;
+        text-align: center;
+      }
+
+      &__subtitle {
+        &__container {
+          width: 80vw;
+        }
+      }
+    }
+
+    // Lessons Section
+    .lessons {
+      &__header {
+        margin-right: 0;
+      }
+
+      &__subtitle {
+        &__container {
+          width: 80vw;
+        }
+      }
+    }
+
+    // contact section
+    .section {
+      &__contact {
+        height: 100%;
+      }
+      &__header {
+        text-align: center;
+        margin: 10rem 0 8rem 0;
+      }
+    }
+
+    .contact {
+      &__info {
+        margin-left: 0;
+        margin-bottom: 5rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    &__subtitle {
+      color: var(--text-subtitle-color);
+      font-size: 1.5rem;
+      width: 350px;
+      font-family: "Lexend Deca", sans-serif;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    &__email {
+      color: var(--text-contact-color);
+      font-size: 2.25rem;
+
+      text-decoration: none;
+    }
+  }
+}

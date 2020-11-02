@@ -1,0 +1,98 @@
+@media (max-width: 1366px) {
+  body {
+    // ----------------------------------------------------- HomePage view ----------------------------------------------------- //
+
+    // NavBar styling
+    .navbar {
+      &__wrapper {
+        width: 95%;
+      }
+    }
+
+    // TechStack Text
+    .techStack {
+      &__container {
+        margin-left: auto;
+
+        width: 300px;
+      }
+    }
+
+    //About Text
+    .about {
+      &__summary {
+        margin: 0 0 0 10vw;
+      }
+    }
+
+    // Project Grid Section
+    .projects {
+      &__grid {
+        width: 90vw;
+      }
+    }
+
+    .project {
+      &__card {
+        width: 450px;
+      }
+
+      &__image {
+        width: 450px;
+      }
+    }
+
+    // Upcoming Section
+    .placeholder {
+      &__project {
+        width: 80vw;
+
+        .project {
+          &__description {
+            text-align: justify;
+            width: 60vw;
+          }
+        }
+      }
+    }
+
+    // ----------------------------------------------------- ProjectDetails view ----------------------------------------------------- //
+    .project {
+      &__introduction {
+        display: flex;
+        justify-content: center;
+      }
+
+      &__title {
+        &__header {
+          font-size: 2.25rem;
+        }
+
+        &__subtitle {
+          font-size: 1.3rem;
+          width: 350px;
+        }
+
+        &__screenshot {
+          width: 500px;
+          margin-left: 0;
+        }
+
+        &__hero {
+          width: 600px;
+          height: 390px;
+          margin-bottom: 3rem;
+        }
+      }
+    }
+
+    .projects {
+      &__feed {
+        display: flex;
+        justify-content: space-around;
+        width: 80vw;
+        margin: 0 auto;
+      }
+    }
+  }
+}
