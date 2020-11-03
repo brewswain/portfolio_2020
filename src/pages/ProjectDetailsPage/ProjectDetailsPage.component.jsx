@@ -2,6 +2,8 @@ import React, { useContext, useEffect } from "react";
 
 import "./ProjectDetailsPage.style.scss";
 
+import { useLocation } from "react-router-dom";
+
 import { NavBar, SideBar } from "../../partials";
 
 import ProjectDetails from "../../data/ProjectDetails.data";
@@ -27,8 +29,10 @@ const ProjectDetailsPage = () => {
   const { selectedProject } = useContext(ProjectContext);
   const { projectState, setProjectState } = useContext(SelectedProjectContext);
 
+  const currentUrl = useLocation();
+  let chosenProject = currentUrl.pathname.replace("/projects/", "");
   let filteredProject = ProjectDetails.filter(
-    (project) => project.id === projectState
+    (project) => project.id === chosenProject
   );
 
   useEffect(() => {
